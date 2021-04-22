@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr Steel | Contacto</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+    <section>
+        <h1>Steel Davis</h1>
+        <h2>  <i>Mr Steel </i></h2>
+    </section>
+<section id="menu">
+        <div>
+            <table id=tabla>
+                <tr>
+                    <td> <a href="C:\Users\usuario.factu\Desktop\CURSO HTML - CSS - MYSQL\Proyecto UTN\Steel David\index.html"> Inicio</a></td>
+                    
+                    <td> <a href="C:\Users\usuario.factu\Desktop\CURSO HTML - CSS - MYSQL\Proyecto UTN\Steel David\vidapersonal.html"> Vida Pesonal </a></td>
+                    
+                    <td> <a href="C:\Users\usuario.factu\Desktop\CURSO HTML - CSS - MYSQL\Proyecto UTN\Steel David\drones.html"> Drones </a></td>
+                    
+                    <td> <a href="C:\Users\usuario.factu\Desktop\CURSO HTML - CSS - MYSQL\Proyecto UTN\Steel David\contacto.html"> Contacto </a></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    </header>
+    
+
+    <h1>Envía Un Mensaje</h1>
+    <div>
+
+    <p> <a href="https://www.instagram.com/mrsteelefpv/" target="_blank"> <img src="instagram.png" alt="instagram"  height="25px" width="25px"></a> <a href="https://twitter.com/mrsteelefpv" alt="twitter" target="_blank" height="25px" width="25px"></a></p>
+    <p><a href="https://www.linkedin.com/in/steele-davis-b176aa100/" target="_blank"> <img src="tw1.png" alt="twitter" height="25px" width="25px"></a></p>
+
+</div>
+    
+</header>
+<main>
+
+    <div class="split right">
+        <div class="centered">
+  
+    <nav>
+        <form action="php/codigo.php" method="POST" enctype="multipart/form-dataS">  
+
+             <!--
+               Si no selecciono el enctype multipart nunca van a llegar todos los archivos.
+               en la parte de insertar el file tengo que ponerle el atributo multiple
+            -->
+       
+           <h3> Enviar un mensaje</h3>
+              
+    <br>
+              <p>*Nombre</p>
+                <label > <input type="text" name="nombre" placeholder="Nombre" required></label>
+                <br>
+                <p>*Email</p>
+                <label><input type=”email” required placeholder=info@dominio.com> </label>
+                <br>
+
+                <br>
+                <p>*Mensaje</p>
+                <label> <textarea required name="Mensaje" placeholder="Escribir mensaje"></textarea></label>
+
+                 <!--
+                textarea se usa cuando la persona tiene que escribir algo largo.
+                La persona puede modificar el tamaño desde la pagina y tiene una barra para scrollear cuanto mas escribe
+            -->
+
+                <br>
+<p>Adjunto</p>
+<label > <input type="file"name="archivo" multiple></label>
+
+                <br>
+        <br>
+            <button>Enviar</button>
+
+            <!--
+                <input type="submit" value="Enviar el formulario">
+                <input type="reset" value="Borrar todos los datos del formulario" (NO SE USA HOY EN DIA EXCEPTO QUE PONGAS UN WARNING TIPO ESTAS SEGURO?)
+                <input type="button" value="botón que no hace nada"> (NO FUNCIONA EXCEPTO QUE LE PONGAS JAVASCRIPT)
+            -->
+
+            </form>
+    </nav>
+
+    </div>
+    </div>
+</main>
+</body>
+</html>
